@@ -2,7 +2,7 @@
 from pyirobot import Robot, RobotError, BinStatus
 import json
 
-robot_ip = "192.168.2.116"
+robot_ip = "192.168.2.161"
 
 print("Querying robot password...")
 robot_password = Robot.GetPassword(robot_ip)
