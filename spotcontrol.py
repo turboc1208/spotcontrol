@@ -7,9 +7,8 @@ class spotcontrol(appapi.my_appapi):
   def initialize(self):
     self.LOGLEVEL="DEBUG"
     self.log("SpotControl App")
-#    self.run_daily(self.timer_handler_on,datetime.time(23,30,0))
-    self.run_daily(self.timer_handler_on,datetime.time(13,54,0))
-    self.run_daily(self.timer_handler_off,datetime.time(13,55,0))    
+    self.run_daily(self.timer_handler_on,datetime.time(23,30,0))
+    self.run_daily(self.timer_handler_off,datetime.time(1,0,0))    
 
   def timer_handler_on(self,kwargs):
     self.process_event("on")
